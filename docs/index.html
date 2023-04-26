@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+<link href="src/css/common.css" rel="stylesheet"><link href="src/css/index.css" rel="stylesheet"></head>
+
+<body>
+  <!-- 引入公共页头 -->
+   <header class="pc-header header-container abs"> <div class="header-box max-center"> <a href="/" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="22" height="22"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header> <header class="m-header header-container"> <div class="header-top"> <a href="" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <div class="menu"> <span></span> <span></span> <span></span> </div> </div> <div class="menu-container"> <nav class="nav-list"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="18" height="18"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header>
+    <section class="banner-container">
+      <img src="/public/images/home/banner.jpg" class="pc" alt="国家开放大学出版传媒集团">
+      <img src="/public/images/home/banner.jpg" class="m" alt="国家开放大学出版传媒集团">
+    </section>
+    <section class="nav-container">
+      <nav class="nav-list max-center">
+        <a class="nav-item on" href="/">首页</a>
+        <a class="nav-item" href="news_list.html">系列报道</a>
+        <a class="nav-item" href="book.html">成就与展望</a>
+        <a class="nav-item" href="story.html">我们的故事</a>
+        <a class="nav-item" href="/#history">大事记</a>
+        <a class="nav-item" href="photo.html">老照片</a>
+        <a class="nav-item" href="style_photo.html">部门风采</a>
+      </nav>
+    </section>
+    <section class="news-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">系列报道</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="news-box news-swiper max-center" data-autoplay="0" data-speed="80">
+        <ul class="news-list">
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">集团2021年度图书社会效益评价考核再获优秀</div>
+                  <div class="desc">
+                    日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版
+                  </div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new1.jpg" alt="集团2021年度图书社会效益评价考核再获优秀">
+              </div>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">深化基于数字化战略的精准师训 ，赋能教师发展——数字时代教师专业发展学术圆桌暨《中国教师培训发展报告（2021）》发布会召开 </div>
+                  <div class="desc">
+                    教育是国之大计、党之大计，教师是立教之本、兴教之源，高质量教师队伍是高质量教育发展的根本保证教育是国之大计、党之大计，教师是立教之本、兴教之源，高质量教师队伍是高质量教育发展的根本保证</div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new2.jpg" alt="深化基于数字化战略的精准师训 ，赋能教师发展——数字时代教师专业发展学术圆桌暨《中国教师培训发展报告（2021）》发布会召开 ">
+              </div>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">集团2021年度图书社会效益评价考核再获优秀</div>
+                  <div class="desc">
+                    2022年7月中下旬，庆祝国家开放大学出版社成立四十周年暨出版传媒集团成立二十周年足球友谊赛及篮2022年7月中下旬，庆祝国家开放大学出版社成立四十周年暨出版传媒集团成立二十周年足球友谊赛及篮
+                  </div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new3.jpg" alt="集团2021年度图书社会效益评价考核再获优秀">
+              </div>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">集团2021年度图书社会效益评价考核再获优秀</div>
+                  <div class="desc">
+                    日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版
+                  </div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new1.jpg" alt="集团2021年度图书社会效益评价考核再获优秀">
+              </div>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">深化基于数字化战略的精准师训 ，赋能教师发展——数字时代教师专业发展学术圆桌暨</div>
+                  <div class="desc">
+                    教育是国之大计、党之大计，教师是立教之本、兴教之源，高质量教师队伍是高质量教育发展的根本保证教育是国之大计、党之大计，教师是立教之本、兴教之源，高质量教师队伍是高质量教育发展的根本保证</div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new2.jpg" alt="《中国教师培训发展报告（2021）》发布会召开 ">
+              </div>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="news_view.html">
+              <div class="text">
+                <div class="top">
+                  <div class="title">集团2021年度图书社会效益评价考核再获优秀</div>
+                  <div class="desc">
+                    2022年7月中下旬，庆祝国家开放大学出版社成立四十周年暨出版传媒集团成立二十周年足球友谊赛及篮2022年7月中下旬，庆祝国家开放大学出版社成立四十周年暨出版传媒集团成立二十周年足球友谊赛及篮
+                  </div>
+                </div>
+                <div class="date">2022-10-08</div>
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/new3.jpg" alt="集团2021年度图书社会效益评价考核再获优秀">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-logo left" style="top: 0;">
+        <img src="/public/images/home/bg-logo-1.png">
+      </div>
+    </section>
+    <section class="video-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">宣传片</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="video-swiper-box max-center">
+        <div class="video-swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide video-box">
+              <img src="/public/images/home/video-poster.jpg" class="video-poster">
+              <img src="/public/images/home/video-logo.png" class="video-logo">
+              <div class="play" data-video="/public/images/style/video.webm"></div>
+              <div class="mask"></div>
+            </div>
+            <div class="swiper-slide video-box">
+              <img src="/public/images/home/video-poster.jpg" class="video-poster">
+              <img src="/public/images/home/video-logo.png" class="video-logo">
+              <div class="play" data-video="http://sheqing.crtvup.com.cn/static/upload/other/20221017/1665978611375338.mp4"></div>
+              <div class="mask"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-video-prev"></div>
+        <div class="swiper-button-next swiper-button-video-next"></div>
+      </div>
+
+      <div class="bg-logo right" style="top: 30%;">
+        <img src="/public/images/home/bg-logo-2.png">
+      </div>
+    </section>
+    <section class="achievement-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">成就与展望</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="box-achievement-cont">
+        <div class="box-achievement max-center">
+          <div class="text-box">
+            <div class="text">
+              <div class="tab-title">序言</div>
+              <div class="tab-content">
+                国家开放大学出版传媒集团作为全国唯一一家以远程开放教育出版为特色的现代化、综合性出版传媒集团，是新中国远程教育与继续教育教材建设的开拓者，是我国高等学历继续教育教材和终身教育领域学术出版的主阵地。集团始终立足党和国家发展大局，践行“立德树人”教育出版理念，秉持服务开放大学、服务社会大众、服务终身学习的初心，努力打造“培根铸魂、启智增慧、适应时代要求”的精品教材和涵育时代新风的其他出版物，构建了涵盖开放教育、职业教育、老年教育、考试培训、少儿教育等的终身教育出版格局，为推动我国高等教育大众化、普及化，构建中国特色终身教育体系做出了突出贡献。
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="" class="p-3d">
+          <img src="/public/images/3d.png" alt="">
+        </a>
+      </div>
+
+      <!-- <div class="achievement-box max-center">
+        <div class="top-layout">
+          <div class="left-layout">
+            <div class="title"><i></i>企业管理 &gt;</div>
+            <div class="info">
+              <p>
+                集团遵循教育出版工作的客观规律，不断创新管理体制，实施精细化管理，优化
+                现代企业治理体系，助推集团高质量发展。
+              </p>
+              <p>
+                2002—2022年间，集团已具有年出版图书、音像、电子、期刊等各类出版物
+                1500余种的生产能力，实现了年印制码洋从2.9亿元增长至近12亿元的跨越式增长，
+                总体经济规模长期位居全国大学出版社前列，社会效益评价考核情况优秀。
+              </p>
+            </div>
+            <ul class="other-list">
+              <li class="other-item">
+                <div class="title">组织架构</div>
+                <div class="cont">
+                  <div class="desc">
+                    截至2022年9月末，集团共有3家核心出版单位和5家子公司、3家分公司，15个内设部门，初步建立了党组织、董事会、监事会、经理层、选题委员会、质量委员会等既分工负责又高度协同的现代化治理体系。
+                  </div>
+                  <img src="/public/images/home/zzjg.png" alt="">
+                </div>
+              </li>
+              <li class="other-item">
+                <div class="title">队伍建设</div>
+                <div class="cont">
+                  <div class="desc">
+                    为实现新时代出版工作高质量发展，
+                    集团高度注重人才队伍建设，打造了一
+                    支高素质、高水平的出版人才队伍。
+                  </div>
+                  <img src="/public/images/home/dwjs.png" alt="">
+                </div>
+              </li>
+              <li class="other-item">
+                <div class="title">信息化建设</div>
+                <div class="cont">
+                  <div class="desc">
+                    当前集团信息化建设已驶入发展快
+                    车道，建成了ERP系统、用友财务系统、
+                    OA系统、媒资库等重要基础性信息系
+                    统。未来集团将加快构建一体化、数智
+                    化的信息平台，打造“2+2+N”的业务
+                    架构，为集团的高质量发展筑牢基础。
+                  </div>
+                  <img src="/public/images/home/xxhjs.png" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="right-layout">
+            <div class="title"><i></i>成果荣誉 &gt;</div>
+            <div class="info-title right">
+              <span>我们的成就</span>
+            </div>
+            <div class="text right mb30">
+              <p>累计出版图书 <b>11 000</b> 多种</p>
+              <p>出版音像电子出版物 <b>4 000</b> 多种</p>
+              <p>出版学术期刊 <b>600</b> 多期</p>
+              <p>提供高质量纸质和融媒体教材将近 <b>6 000</b> 种</p>
+              <p>累计服务开放教育学生 <b>2 000</b> 余万</p>
+              <p>国内最大的开放教育教材和学术专著出版基地</p>
+              <p>教育部职业教育教材出版基地</p>
+              <p>职业教育数字资源开发应用基地</p>
+              <p>国家第二批数字出版转型示范单位</p>
+              <p>国家数字复合出版系统工程应用试点单位</p>
+              <p>国家数字复合出版系统工程应用示范项目供应商</p>
+            </div>
+            <img src="/public/images/home/cg1.png">
+            <img src="/public/images/home/cg2.png">
+            <div class="info-title left">
+              <span>我们的荣誉</span>
+            </div>
+            <div class="text left">
+              <p>中宣部主题出版重点出版物 <b>2</b> 种</p>
+              <p>国家重点出版物出版规划项目 <b>64</b> 个</p>
+              <p>职业教育国家规划教材 <b>200+</b> 种</p>
+              <p>国家新闻出版改革发展项目库入库项目 <b>8</b> 个</p>
+              <p>财政部文化产业发展专项 <b>3</b> 个</p>
+              <p>国家出版基金资助项目 <b>21</b> 个</p>
+              <p>中国出版政府奖 <b>1</b> 种</p>
+              <p>中华优秀出版物奖 <b>6</b> 种</p>
+              <p>首届全国教材建设奖 <b>13</b> 种</p>
+              <p>农家书屋重点出版物、向青少年推荐优秀出版物、</p>
+              <p>向老年人推荐优秀出版物…… <b>42</b> 种</p>
+              <p>中国期刊方阵“双效”期刊</p>
+              <p>中文社会科学引文索引（CSSCI）来源期刊</p>
+              <p>AMI综合评价（A刊）核心期刊</p>
+              <p>人大复印报刊资料重要转载来源期刊</p>
+              <p>中国科学评价研究中心（RCCSE）核心期刊</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-layout">
+          <div class="title"><i></i>未来展望&gt;</div>
+          <div class="cont">
+            <div class="left">
+              <p>
+                <span>使&nbsp;&nbsp;&nbsp;&nbsp;命</span>
+                <span>为终身学习者提供知识服务</span>
+              </p>
+              <p>
+                <span>愿&nbsp;&nbsp;&nbsp;&nbsp;景</span>
+                <span>让学习更有效</span>
+              </p>
+              <p>
+                <span>价值观</span>
+                <span>以学习者为中心，以奋进者为本，开放融合，持续进化</span>
+              </p>
+            </div>
+            <div class="right">
+              <p>守初心，融新境，领航程。</p>
+              <p>
+                国家开放大学出版传媒集团将以习近平新时代中国特色社会主义思想为指导，在学校党委的坚强领导下，踔厉奋发、笃行不怠，在“十四五”期间，努力成为一个有责任的校办企业、一个有情怀的教育企业、一个风清气正的文化企业、一个能自创内容的实干型企业、一个充满活力的融合型企业、一个保持进化的学习型企业，为世界一流开放大学建设做出更大贡献。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="achievement-img max-center">
+        <img src="/public/images/home/achievement-img.png" alt="成就与展望">
+      </div> -->
+      <div class="more-btn">
+        <a href="book.html">- 查看更多 -</a>
+      </div>
+      <!-- <div class="bg-logo left" style="top: 15%;">
+        <img src="/public/images/home/bg-logo-3.png">
+      </div> -->
+    </section>
+    <section class="story-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">我们的故事</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="story-box max-center">
+        <ul class="story-list">
+          <li class="story-item on">
+            <div class="text">
+              <div class="title-box">
+                <div class="title"><span>献</span>礼文集</div>
+                <div class="desc">
+                  <p>庆祝国家开放大学出版社成立40周年暨</p>
+                  <p>国家开放大学出版传媒集团成立20周年</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="title">不忘初心 赓续辉煌</div>
+                <div class="desc">
+                  国家开放大学出版社有限公司成立于1982年10月，是一所由教育部主管、国家开放大学主办的综合性大学出版社。建社30多年来，出版社始终坚持为人民服务、为社会主义服务的出版方针，坚持为国家开放大学教学和科研服务的办社宗旨，紧紧围绕国家开放大学教育事业的改革与发展，不断探索适合自己特点的发展之路，逐步形成了服务开放教育，服务远程教育，服务职业教育，服务终身学习的发展格局。
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/public/images/home/story1.png" alt="">
+            </div>
+          </li>
+          <li class="story-item">
+            <div class="text">
+              <div class="title-box">
+                <div class="title"><span>献</span>礼文集</div>
+                <div class="desc">
+                  <p>庆祝国家开放大学出版社成立30周年暨</p>
+                  <p>国家开放大学出版传媒集团成立20周年</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="title">不忘初心 赓续辉煌</div>
+                <div class="desc">
+                  　
+                  国家开放大学出版社有限公司成立于1982年10月，是一所由教育部主管、国家开放大学主办的综合性大学出版社。建社30多年来，出版社始终坚持为人民服务、为社会主义服务的出版方针，坚持为国家开放大学教学和科研服务的办社宗旨，紧紧围绕国家开放大学教育事业的改革与发展，不断探索适合自己特点的发展之路，逐步形成了服务开放教育，服务远程教育，服务职业教育，服务终身学习的发展格局。
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/public/images/home/story1.png" alt="">
+            </div>
+          </li>
+        </ul>
+        <ul class="story-tab-list">
+          <li class="story-tab-item on">
+            <div class="text">
+              <span>40</span>
+              周年文集
+            </div>
+            <div class="img">
+              <img src="/public/images/story-tab1.png" alt="40周年文集">
+            </div>
+          </li>
+          <li class="story-tab-item">
+            <div class="text">
+              <span>30</span>
+              周年文集
+            </div>
+            <div class="img">
+              <img src="/public/images/story-tab2.png" alt="30周年文集">
+            </div>
+          </li>
+        </ul>
+        <div class="more-btn">
+          <a href="story.html">- 查看更多 -</a>
+        </div>
+      </div>
+      <div class="bg">
+        <img src="/public/images/home/bg-story.png">
+      </div>
+      <div class="bg-logo right" style="top: 40%;">
+        <img src="/public/images/home/bg-logo-4.png">
+      </div>
+    </section>
+    <section class="music-container">
+      <div class="music-box max-center">
+        <div class="logo">
+          <img src="/public/images/home/icon-music.png" class="icon">
+        </div>
+        <div class="title-box">
+          <div class="title">相约在成才路上</div>
+          <div class="desc">
+            <p>国家开放大学出版社/国家开放大学出版传媒集团 社歌</p>
+            <p>谢孟 词</p>
+            <p>雷蕾 曲</p>
+          </div>
+        </div>
+        <div class="cont-box">
+          <div class="icon"></div>
+          <div class="cont">
+            <p>
+              寒来暑往，锦绣文章。关爱暖学子，墨香飘八方。真理吹开心灵之窗，知识托起初升太阳。啊……
+              春雨如梦好写意，书中把祝福珍藏。用激情耕耘未来，永远相约在成才路上！
+            </p>
+            <p>
+              南国北疆，良师相傍。开卷会挚友，天涯济一堂。智慧点燃青春火炬，迎风架起七彩桥梁。啊……
+              春雨如梦好写意，书中把祝福珍藏。用激情耕耘未来，永远相约在成才路上！
+            </p>
+          </div>
+        </div>
+        <img src="/public/images/home/bg-music-logo.png" class="bg-logo">
+      </div>
+      <audio src="/public/images/home/music.mp3" id="audio"></audio>
+    </section>
+    <section id="history" class="history-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">大事记</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="history-box max-center">
+        <div class="history-wrapper history-swiper swiper-container">
+          <ul class="history-list swiper-wrapper">
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1978年</div>
+                <div class="desc">
+                  邓小平同志于1978年亲自倡导并批示创办中央广播电视大学。伴随着广播电视大学的成立，其内设机构——教材设备处、录制中心和杂志编辑部所从事的编辑、印制及发行等工作，成为集团出版事业的源头。</div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history1.jpg" alt="">
+                <img src="/public/images/home/history1.jpg" alt="">
+                <img src="/public/images/home/history1.jpg" alt="">
+                <img src="/public/images/home/history1.jpg" alt="">
+                <img src="/public/images/home/history1.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1981年</div>
+                <div class="desc">
+                  经教育部同意（〔80〕教视字017号），中央广播电视大学从1981年开始出版《电视大学》杂志，公开发行。教育部批示刊物要办出电大的特色。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history2.jpg" alt="">
+                <img src="/public/images/home/history3.jpg" alt="">
+                <img src="/public/images/home/history3.jpg" alt="">
+                <img src="/public/images/home/history3.jpg" alt="">
+                <img src="/public/images/home/history3.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1982年</div>
+                <div class="desc">
+                  10月，经文化部、教育部批准，中央广播电视大学出版社正式成立，以出版电大教材、教学参考资料为主业。出版社克服重重困难，开始了远程教育的出版事业。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history4.jpg" alt="">
+                <img src="/public/images/home/history5.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1986年</div>
+                <div class="desc">
+                  经国家出版局同意（〔85〕出综字第654号)，《电视大学》自1986年起更名为《中国电大教育》，公开发行。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history6.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1988年</div>
+                <div class="desc">
+                  10月4日，经广播电影电视部批准（〔88〕广录发字828号)，中央广播电视大学音像教材出版社成立。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history7.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1978年</div>
+                <div class="desc">
+                  邓小平同志于1978年亲自倡导并批示创办中央广播电视大学。伴随着广播电视大学的成立，其内设机构——教材设备处、录制中心和杂志编辑部所从事的编辑、印制及发行等工作，成为集团出版事业的源头。</div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history1.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1981年</div>
+                <div class="desc">
+                  经教育部同意（〔80〕教视字017号），中央广播电视大学从1981年开始出版《电视大学》杂志，公开发行。教育部批示刊物要办出电大的特色。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history2.jpg" alt="">
+                <img src="/public/images/home/history3.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1982年</div>
+                <div class="desc">
+                  10月，经文化部、教育部批准，中央广播电视大学出版社正式成立，以出版电大教材、教学参考资料为主业。出版社克服重重困难，开始了远程教育的出版事业。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history4.jpg" alt="">
+                <img src="/public/images/home/history5.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1986年</div>
+                <div class="desc">
+                  经国家出版局同意（〔85〕出综字第654号)，《电视大学》自1986年起更名为《中国电大教育》，公开发行。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history6.jpg" alt="">
+              </div>
+            </li>
+            <li class="history-item swiper-slide">
+              <div class="top">
+                <span class="line"></span>
+                <span class="circle"></span>
+                <div class="date">1988年</div>
+                <div class="desc">
+                  10月4日，经广播电影电视部批准（〔88〕广录发字828号)，中央广播电视大学音像教材出版社成立。
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="/public/images/home/history7.jpg" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap-line"></div>
+        <div class="swiper-button-prev swiper-button-history-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="8px">
+            <path fill-rule="evenodd" fill="rgb(188, 31, 33)" d="M11.759,3.999 L21.9,0.0 L21.9,7.999 L11.759,3.999 ZM9.249,0.0 L9.249,7.999 L0.0,3.999 L9.249,0.0 Z"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-button-history-next">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="8px">
+            <path fill-rule="evenodd" fill="rgb(188, 31, 33)" d="M11.749,7.999 L11.749,0.0 L20.999,3.999 L11.749,7.999 ZM0.10,0.0 L9.239,3.999 L0.10,7.999 L0.10,0.0 Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="tips">
+        <p>左右滑动查看大事记</p>
+        <img src="/public/images/home/tips-img.png" alt="左右滑动查看大事记">
+      </div>
+      <div class="bg-logo left" style="top: 10%;">
+        <img src="/public/images/home/bg-logo-5.png">
+      </div>
+    </section>
+    <section class="photo-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">老照片</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="photo-box max-center">
+        <div class="aside-layout">
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo1.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo2.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo3.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+        </div>
+        <div class="center-layout">
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo4.jpg" alt="">
+            </div>
+            <p>2006年5月8日，参加共青团中央电大第五次代表大会</p>
+          </div>
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo5.jpg" alt="">
+            </div>
+            <p>2006年5月8日，参加共青团中央电大第五次代表大会</p>
+          </div>
+        </div>
+        <div class="aside-layout">
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo6.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo7.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+          <div class="img-box">
+            <div class="img">
+              <img src="/public/images/home/photo8.jpg" alt="1997年新党员宣誓">
+            </div>
+            <p>1997年新党员宣誓</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-btn">
+        <a href="photo.html">- 查看更多 -</a>
+      </div>
+      <div class="bg-logo right" style="top: 10%;">
+        <img src="/public/images/home/bg-logo-6.png">
+      </div>
+      <div class="bg-logo left" style="bottom: 15%;">
+        <img src="/public/images/home/bg-logo-7.png">
+      </div>
+    </section>
+    <section class="style-container module">
+      <div class="title-module max-center">
+        <img src="/public/images/title-img.png" alt="不忘初心 赓续辉煌" class="title-img">
+        <div class="title-box">
+          <div class="title">部门风采</div>
+          <div class="line"></div>
+          <div class="desc">40年社庆</div>
+        </div>
+      </div>
+      <div class="style-box max-center">
+        <div class="top-layout">
+          <div class="left-layout">
+            <div class="img-box">
+              <img src="/public/images/home/style1.jpg">
+            </div>
+            <div class="img-box">
+              <img src="/public/images/home/style2.jpg">
+            </div>
+          </div>
+          <div class="center-layout">
+            <div class="img-box">
+              <img src="/public/images/home/style3.jpg">
+            </div>
+          </div>
+          <div class="right-layout">
+            <div class="top">
+              <div class="img-box">
+                <img src="/public/images/home/style4.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style5.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style6.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style7.jpg">
+              </div>
+
+            </div>
+            <div class="bottom">
+              <div class="img-box">
+                <img src="/public/images/home/style8.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style9.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style10.jpg">
+              </div>
+              <div class="img-box">
+                <img src="/public/images/home/style11.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-layout">
+          <div class="img-box">
+            <img src="/public/images/home/style12.jpg">
+          </div>
+          <div class="img-box">
+            <img src="/public/images/home/style13.jpg">
+          </div>
+          <div class="img-box">
+            <img src="/public/images/home/style14.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="more-btn">
+        <a href="style_photo.html">- 查看更多 -</a>
+      </div>
+      <div class="bg-logo right" style="bottom: 15%;">
+        <img src="/public/images/home/bg-logo-8.png">
+      </div>
+    </section>
+    <section class="alert-container">
+      <div class="alert-box">
+        <div class="video">
+          <video src="" class="alert-video" controls></video>
+        </div>
+        <div class="close">
+          <svg t="1665628198042" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2556">
+            <path d="M557.312 513.248l265.28-263.904c12.544-12.48 12.608-32.704 0.128-45.248-12.512-12.576-32.704-12.608-45.248-0.128l-265.344 263.936-263.04-263.84C236.64 191.584 216.384 191.52 203.84 204 191.328 216.48 191.296 236.736 203.776 249.28l262.976 263.776L201.6 776.8c-12.544 12.48-12.608 32.704-0.128 45.248 6.24 6.272 14.464 9.44 22.688 9.44 8.16 0 16.32-3.104 22.56-9.312l265.216-263.808 265.44 266.24c6.24 6.272 14.432 9.408 22.656 9.408 8.192 0 16.352-3.136 22.592-9.344 12.512-12.48 12.544-32.704 0.064-45.248L557.312 513.248z" p-id="2557" fill="#6d6d6d"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <footer class="footer-container"> <div class="footer-box"> <div class="links"> <a href=""> <img src="/public/images/link1.png" alt=""> </a> <a href=""> <img src="/public/images/link2.png" alt=""> </a> <a href=""> <img src="/public/images/link3.png" alt=""> </a> <a href=""> <img src="/public/images/link4.png" alt=""> </a> <a href=""> <img src="/public/images/link5.png" alt=""> </a> </div> <div class="cert"> <p>京ICP备14005380号-1</p> <p>经营许可证编号：京ICP证150324号</p> <p>互联网出版许可证</p> <p>京公网安备11010802029563号</p> <p>国家开放大学出版社有限公司</p> </div> <div class="copyright"> copyright 2022.crtvup.com.cn All Rights Reserved </div> </div> </footer> <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/js/styles~book~index~news_list~news_view~photo~story~style_photo~style_video.js"></script><script src="src/js/vendors~book~index~photo.js"></script><script src="src/js/index.js"></script></body>
+
+</html>

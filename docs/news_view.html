@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+<link href="src/css/common.css" rel="stylesheet"><link href="src/css/news_view.css" rel="stylesheet"></head>
+
+<body>
+  <!-- 引入公共页头 -->
+   <header class="pc-header header-container abs"> <div class="header-box max-center"> <a href="/" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="22" height="22"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header> <header class="m-header header-container"> <div class="header-top"> <a href="" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <div class="menu"> <span></span> <span></span> <span></span> </div> </div> <div class="menu-container"> <nav class="nav-list"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="18" height="18"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header>
+    <!-- 引入公共导航 -->
+    <section class="nav-container"> <nav class="nav-list max-center"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> </section>
+      <!-- 引入公共面包屑 -->
+      <section class="crumbs-container"> <div class="crumbs-box max-center"> <svg t="1665621257853" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="26" height="26"><path d="M947.2 422.4L572.8 115.2c-32-25.6-86.4-25.6-118.4 0L76.8 425.6c-12.8 6.4-16 22.4-9.6 35.2 3.2 12.8 16 19.2 28.8 19.2h32v364.8C128 892.8 163.2 928 211.2 928H416c19.2 0 32-12.8 32-32v-147.2c0-22.4 35.2-44.8 64-44.8 28.8 0 67.2 22.4 67.2 44.8V896c0 19.2 12.8 32 32 32h208c48 0 80-32 80-83.2V480h32c12.8 0 25.6-9.6 28.8-22.4 3.2-12.8 0-25.6-12.8-35.2z" fill="#b8b8b8" p-id="2555"></path></svg> <span>所在位置：</span> <a href="/">首页</a>&nbsp;-&nbsp; <a href="">系列报道</a> </div> </section>
+        <section class="news-container max-center">
+          <div class="top">
+            <div class="date">
+              <div class="text">
+                <div class="day">08</div>
+              <div class="year">2022-10</div>
+              </div>
+            </div>
+            <h1 class="title">集团2021年度图书社会效益评价考核再获优秀</h1>
+          </div>
+          <div class="content">
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版传媒集团下属出版社2021年度社会效益得分
+              为93.25分，等级为优秀。这是出版社连续2年获得“优秀”评级，考核得分也再创新高。
+            </p>
+            <p style="text-align: center;">
+              <img src="/public/images/delate/new1.png" alt="">
+            </p>
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              图书出版单位社会效益评价考核工作由中宣部于2018年启动，考核指标包括出版质量、文化和社会影响、产品结构、制度建设和队伍建设四个方面，
+              考核结果将运用到出版单位绩效考核、评奖推优、出版资源配置等各个方面，以推动出版单位切实把社会效益放在首位、实现社会效益和经济效益相统一，
+              促进出版业健康繁荣发展。
+            </p>
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              出版传媒集团始终立足党和国家发展大局，坚持正确出版导向，认真落实立德树人根本任务，聚焦主责主业，图书质量不断提升，精品出版在2021年
+              取得一系列成就和突破：集团出版物首次荣获中国出版政府奖，首次入选中宣部主题出版重点出版物，在首届全国教材建设奖评选中获得了职业教育与继续
+              教育类获奖总数全国出版社第5、大学出版社第2的优异成绩。同时，集团持续开展各类图书捐赠、阅读推广等公益活动，主动承担文化单位社会责任，得到
+              媒体、读者和社会大众广泛认可，社会影响力显著提升。在2021年度图书出版单位社会效益评价考核工作中得到主办单位国家开放大学、主管部门教育部社
+              科司高度肯定，也为集团成立20周年暨出版社成立40周年交出了一张亮眼的成绩单。
+            </p>
+          </div>
+        </section>
+
+        <!-- 引入公共页尾 -->
+        <footer class="footer-container"> <div class="footer-box"> <div class="links"> <a href=""> <img src="/public/images/link1.png" alt=""> </a> <a href=""> <img src="/public/images/link2.png" alt=""> </a> <a href=""> <img src="/public/images/link3.png" alt=""> </a> <a href=""> <img src="/public/images/link4.png" alt=""> </a> <a href=""> <img src="/public/images/link5.png" alt=""> </a> </div> <div class="cert"> <p>京ICP备14005380号-1</p> <p>经营许可证编号：京ICP证150324号</p> <p>互联网出版许可证</p> <p>京公网安备11010802029563号</p> <p>国家开放大学出版社有限公司</p> </div> <div class="copyright"> copyright 2022.crtvup.com.cn All Rights Reserved </div> </div> </footer> <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/js/styles~book~index~news_list~news_view~photo~story~style_photo~style_video.js"></script><script src="src/js/news_view.js"></script></body>
+
+</html>

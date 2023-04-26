@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+<link href="src/css/common.css" rel="stylesheet"><link href="src/css/photo.css" rel="stylesheet"></head>
+
+<body>
+  <!-- 引入公共页头 -->
+   <header class="pc-header header-container abs"> <div class="header-box max-center"> <a href="/" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="22" height="22"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header> <header class="m-header header-container"> <div class="header-top"> <a href="" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <div class="menu"> <span></span> <span></span> <span></span> </div> </div> <div class="menu-container"> <nav class="nav-list"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="18" height="18"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header>
+  <!-- 引入公共导航 -->
+  <section class="nav-container"> <nav class="nav-list max-center"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> </section>
+  <!-- 引入公共面包屑 -->
+  <section class="crumbs-container"> <div class="crumbs-box max-center"> <svg t="1665621257853" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="26" height="26"><path d="M947.2 422.4L572.8 115.2c-32-25.6-86.4-25.6-118.4 0L76.8 425.6c-12.8 6.4-16 22.4-9.6 35.2 3.2 12.8 16 19.2 28.8 19.2h32v364.8C128 892.8 163.2 928 211.2 928H416c19.2 0 32-12.8 32-32v-147.2c0-22.4 35.2-44.8 64-44.8 28.8 0 67.2 22.4 67.2 44.8V896c0 19.2 12.8 32 32 32h208c48 0 80-32 80-83.2V480h32c12.8 0 25.6-9.6 28.8-22.4 3.2-12.8 0-25.6-12.8-35.2z" fill="#b8b8b8" p-id="2555"></path></svg> <span>所在位置：</span> <a href="/">首页</a>&nbsp;-&nbsp; <a href="">系列报道</a> </div> </section>
+  <!-- 引入公共面banner -->
+  <section class="banner-container"> <img src="/public/images/banner.jpg" alt="栏目名称" class="pc"> <img src="/public/images/banner.jpg" alt="栏目名称" class="m"> </section>
+  <main class="main-container">
+    <div class="book-container">
+      <span class="before"></span>
+      <div class="book-swiper swiper-container">
+        <ul class="book-list swiper-wrapper">
+          <li class="book-item swiper-slide">
+            <div class="header-title">
+              <span>国家开放大学出版传媒集团</span>
+            </div>
+            <div class="text">
+              <img src="/public/images/book/1.jpg">
+              <p>80-90年代青年团员参观毛泽东同志故居</p>
+            </div>
+            <img src="/public/images/book/bg-left.jpg" alt="" class="bg">
+          </li>
+          <li class="book-item swiper-slide">
+            <div class="header-title">
+              <span>国家开放大学出版传媒集团</span>
+            </div>
+            <div class="text">
+              <img src="/public/images/book/2.jpg">
+              <p>80-90年代青年团员参观毛泽东同志故居80-90年代青年团员参观毛泽东同志故居80-90年代青年团员参观毛泽东同志故居</p>
+            </div>
+            <img src="/public/images/book/bg-right.jpg" alt="" class="bg">
+          </li>
+  
+  
+        </ul>
+  
+        <div class="swiper-button-prev">上一页</div>
+        <!--左箭头。如果放置在swiper外面，需要自定义样式。-->
+        <div class="swiper-button-next">下一页</div>
+        <!--右箭头。如果放置在swiper外面，需要自定义样式。-->
+      </div>
+      <span class="after"></span>
+    </div>
+    <div class="book-tab-container max-center">
+      <ul class="book-tab-list">
+        <li class="book-tab-item on">
+          <a href="">
+            <img src="/public/images/photo/book1.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+        <li class="book-tab-item">
+          <a href="">
+            <img src="/public/images/photo/book2.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+        <li class="book-tab-item">
+          <a href="">
+            <img src="/public/images/photo/book3.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <!-- 引入公共页尾 -->
+  <footer class="footer-container"> <div class="footer-box"> <div class="links"> <a href=""> <img src="/public/images/link1.png" alt=""> </a> <a href=""> <img src="/public/images/link2.png" alt=""> </a> <a href=""> <img src="/public/images/link3.png" alt=""> </a> <a href=""> <img src="/public/images/link4.png" alt=""> </a> <a href=""> <img src="/public/images/link5.png" alt=""> </a> </div> <div class="cert"> <p>京ICP备14005380号-1</p> <p>经营许可证编号：京ICP证150324号</p> <p>互联网出版许可证</p> <p>京公网安备11010802029563号</p> <p>国家开放大学出版社有限公司</p> </div> <div class="copyright"> copyright 2022.crtvup.com.cn All Rights Reserved </div> </div> </footer> <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/js/styles~book~index~news_list~news_view~photo~story~style_photo~style_video.js"></script><script src="src/js/vendors~book~index~photo.js"></script><script src="src/js/photo.js"></script></body>
+
+</html>

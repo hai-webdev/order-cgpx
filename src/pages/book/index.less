@@ -1,0 +1,100 @@
+@import "~@/assets/global.less";
+.main-container {
+  background-image: url(/public/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom -100%;
+  padding-top: 70px;
+  padding-bottom: 122px;
+  .book-swiper {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    .bg-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      img{
+        max-width: 100%;
+      }
+    }
+    .bg-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+      max-width: 40%;
+      img{
+        max-width: 100%;
+      }
+    }
+    .book-item {
+      .flex();
+      position: relative;
+      .header-title {
+        position: absolute;
+        top: 18px;
+        width: 75%;
+        border-bottom: 1px solid #dedede;
+        color: #9f9f9f;
+        font-size: 15px;
+        &.left {
+          text-align: left;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &.right {
+          text-align: right;
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      &:nth-child(2n + 1) {
+        &::after {
+          content: "";
+          top: 0;
+          position: absolute;
+          right: 0;
+          width: 10%;
+          height: 100%;
+          background-image: linear-gradient(
+            -90deg,
+            rgba(0, 0, 0, 0.1),
+            transparent
+          );
+        }
+      }
+    }
+    .swiper-button-next, .swiper-button-prev{
+      width: auto;
+      height: auto;
+      color:@mainColor;
+      top: auto;
+      bottom: 10px;
+      z-index: 110;
+      opacity: 1;
+      font-size: 13px;
+      text-decoration: underline;
+      &::after{
+        display: none;
+      }
+      &.swiper-button-prev{
+        left: 25%;
+        transform: translateX(-50%);
+      }
+      &.swiper-button-next{
+        right: 25%;
+        transform: translateX(50%);
+      }
+      &.swiper-button-prev.swiper-button-disabled{
+        color:#232323;
+      }
+    }
+  }
+}
+@import "./1080.less" screen and (max-width:1080px);

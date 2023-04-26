@@ -1,0 +1,28 @@
+@import "~@/assets/global.less";
+.pagelist {
+  .flex();
+  a,
+  span {
+    .flex();
+    width: 50px;
+    height: 43px;
+    margin: 0 10px 20px;
+    background-color: #efefef;
+    color: #898989;
+    font-size: 24px;
+    border-radius: 8px;
+    .icon {
+      fill: #898989;
+    }
+    &:hover,
+    &.page-num-current {
+      background-color: @mainColor;
+      color: #fff;
+      .icon {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+@import "./768.less" screen and (max-width:768px);

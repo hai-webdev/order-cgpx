@@ -1,0 +1,35 @@
+@import "~@/assets/global.less";
+.nav-container {
+  margin-bottom: 30px;
+  .flex();
+  .nav-list {
+    .flex(space-between);
+    .nav-item {
+      font-size: 18px;
+      color: #000;
+      position: relative;
+      text-align: center;
+      padding: 10px 0;
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 2px;
+        background-color: @mainColor;
+      }
+      &:hover,
+      &.on {
+        color:@mainColor;
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@import "./1080.less" screen and (max-width:1080px);

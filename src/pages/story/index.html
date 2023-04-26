@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <!-- 引入公共导航 -->
+    <%= require("html-loader!../common/nav/index.html") %>
+      <!-- 引入公共面包屑 -->
+      <%= require("html-loader!../common/crumbs/index.html") %>
+        <!-- 引入公共面banner -->
+        <%= require("html-loader!../common/banner/index.html") %>
+          <main class="main-container">
+            <ul class="story-list max-center">
+              <li class="story-item on">
+                <a href="story.html">40周年文集</a>
+              </li>
+              <li class="story-item">
+                <a href="story.html">30周年文集</a>
+              </li>
+            </ul>
+            <div class="content">
+              <div class="content-box max-center">
+                <div class="select">
+                  <div class="option">
+                    <div class="img">
+                      <img src="/public/images/delate/story1.png" alt="走过三十年">
+                    </div>
+                    <p>走过三十年</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <img src="/public/images/delate/story1.png" alt="走过三十年">
+                  <img src="/public/images/delate/story2.png" alt="走过三十年">
+                </div>
+              </div>
+            </div>
+          </main>
+          <!-- 引入公共页尾 -->
+          <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <!-- 引入公共导航 -->
+    <%= require("html-loader!../common/nav/index.html") %>
+      <!-- 引入公共面包屑 -->
+      <%= require("html-loader!../common/crumbs/index.html") %>
+        <!-- 引入公共面banner -->
+        <%= require("html-loader!../common/banner/index.html") %>
+          <main class="main-container">
+            <div class="book-swiper swiper-container max-center">
+              <ul class="book-list swiper-wrapper">
+                <li class="book-item swiper-slide">
+                  <div class="header-title left">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/1.jpg">
+                    <img src="/public/images/book/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title right">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/2.jpg">
+                    <img src="/public/images/book/2.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title left">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/1.jpg">
+                    <img src="/public/images/book/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title right">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/2.jpg">
+                    <img src="/public/images/book/2.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title left">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/1.jpg">
+                    <img src="/public/images/book/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title right">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/2.jpg">
+                    <img src="/public/images/book/2.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title left">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/1.jpg">
+                    <img src="/public/images/book/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="book-item swiper-slide">
+                  <div class="header-title right">
+                    <span>业务发展</span>
+                  </div>
+                  <a href="/public/images/book/2.jpg">
+                    <img src="/public/images/book/2.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="bg-top">
+                <img src="/public/images/book/bg-book-top.png" alt="">
+              </div>
+              <div class="bg-bottom">
+                <img src="/public/images/book/bg-book-bottom.png" alt="">
+              </div>
+              <div class="swiper-button-prev">上一页</div>
+              <!--左箭头。如果放置在swiper外面，需要自定义样式。-->
+              <div class="swiper-button-next">下一页</div>
+              <!--右箭头。如果放置在swiper外面，需要自定义样式。-->
+            </div>
+          </main>
+          <!-- 引入公共页尾 -->
+          <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

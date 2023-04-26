@@ -1,0 +1,88 @@
+.main-container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  .book-container {
+    padding: 0 24px;
+    margin: 0 auto 40px;
+    .book-swiper {
+      .book-item {
+        .flex();
+        position: relative;
+        padding: 40px 0 60px;
+        .header-title {
+          top: 10px;
+          font-size: 7px;
+          &::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+          }
+          span {
+            padding: 0 10px;
+            font-size: 7px;
+            line-height: 18px;
+            height: 18px;
+          }
+        }
+        .text{
+          width: calc(100% - 20px);
+          font-size: 8px;
+          color:#666;
+          line-height: 1.8;
+          img{
+          margin-bottom: 10px;
+          }
+          p{
+            height: 48px;
+          }
+        }
+        &:nth-child(2n + 1) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        &.swiper-button-prev {
+          left: 40px;
+          font-size: 12px;
+        }
+        &.swiper-button-next {
+          right: 40px;
+          font-size: 12px;
+        }
+      }
+    }
+    .before,
+    .after {
+      width: 24px;
+      &::before {
+        width: 5px;
+      }
+    }
+  }
+  .book-tab-container {
+    .book-tab-list {
+      .flex(center,flex-start);
+      flex-wrap: wrap;
+      .book-tab-item {
+        width: calc((100% - 10px * 4) / 4);
+        margin: 0 10px 20px;
+        padding-bottom: 40px;
+        &:nth-child(4n + 1){
+            margin-left: 10px;
+        }
+        &:nth-child(4n + 4){
+            margin-right: 10px;
+        }
+        &:nth-child(3n + 1){
+            margin-left: 0;
+        }
+        &:nth-child(3n + 3){
+            margin-right: 0;
+        }
+      }
+    }
+  }
+}

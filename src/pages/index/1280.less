@@ -1,0 +1,118 @@
+.nav-container {
+  .flex();
+  .nav-list {
+    .nav-item {
+      font-size: 16px;
+    }
+  }
+}
+.story-container {
+  .story-box {
+    .story-list {
+      .story-item {
+        height: 520px;
+        .text {
+          width: 500px;
+          padding: 30px;
+          .title-box {
+            margin-bottom: 60px;
+            .title {
+              font-size: 60px;
+            }
+            .desc {
+              font-size: 14px;
+            }
+          }
+          .content {
+            .title {
+              font-size: 28px;
+            }
+            .desc {
+              font-size: 15px;
+            }
+          }
+        }
+        .img-box {
+          height: 100%;
+          width: calc(100% - 500px);
+        }
+      }
+    }
+    .story-tab-list {
+      .story-tab-item {
+        height: 120px;
+        font-size: 24px;
+        .flex();
+        span {
+          font-size: 38px;
+        }
+        .img{
+          margin-left: 10px;
+        }
+        &:nth-child(1){
+          .img{
+            img{
+              height: 40px;
+            }
+          }
+        }
+        &:nth-child(2){
+          .img{
+            img{
+              height: 30px;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 40px;
+          background-color: #fff;
+          opacity: 0.2;
+        }
+        &::before {
+          height: 14px;
+          background-size: auto 14px;
+        }
+      }
+    }
+  }
+}
+.music-container {
+  padding: 40px 0;
+  .music-box {
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+    .title-box {
+      width: 280px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      .title {
+        font-size: 24px;
+      }
+    }
+    .cont-box {
+      width: auto;
+      padding-left: 30px;
+      box-sizing: border-box;
+      flex: 1;
+      .icon {
+        margin-bottom: 35px;
+        width: 36px;
+        height: 7px;
+        border-radius: 4px;
+        background-color: #bfa67b;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .bg-logo {
+      display: none;
+    }
+  }
+}

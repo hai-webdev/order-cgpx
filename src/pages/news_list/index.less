@@ -1,0 +1,69 @@
+@import "~@/assets/global.less";
+.news-container {
+  padding-top: 56px;
+  padding-bottom: 90px;
+  background-color: #fff;
+  background-image: url(/public/images/bg-news.png);
+  background-repeat: no-repeat;
+  background-position: center top 35%;
+  background-size: contain;
+  .news-list {
+    margin-bottom: 300px;
+    .news-item {
+      height: 170px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      background-color: #f8f8f8;
+      .text {
+        height: 100%;
+        width: calc(100% - 38px);
+        padding: 25px 80px 20px 40px;
+        box-sizing: border-box;
+        .flex(space-between,flex-start);
+        flex-direction: column;
+        .top {
+          .title {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 22px;
+          }
+          .desc {
+            color: #888;
+            font-size: 16px;
+            .text-hidden(1);
+          }
+        }
+        .date {
+          color: #b8b8b8;
+          font-size: 14px;
+        }
+      }
+      .img-box {
+        flex: 1 0 auto;
+        width: 308px;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        .flex(space-between);
+      }
+    }
+  }
+}
+@import "./1080.less" screen and (max-width:1080px);
+@import "./768.less" screen and (max-width:768px);

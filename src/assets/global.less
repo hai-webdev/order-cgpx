@@ -1,0 +1,150 @@
+@mainColor: #930315;
+@subColor: #e2802a;
+@lightColor: #e9c2c3;
+.max-center {
+  max-width: 1228px;
+  margin: 0 auto;
+  width: 90%;
+}
+.flex(@justify-content:center;@align-items:center) {
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+.text-hidden(@clamp) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @clamp;
+  -webkit-box-orient: vertical;
+}
+.module {
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  position: relative;
+  .bg-logo {
+    position: absolute;
+    z-index: 1;
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+  }
+  .title-img {
+    margin-bottom: 50px;
+  }
+  .title-module {
+    text-align: center;
+    margin-bottom: 30px;
+    .title {
+      font-size: 36px;
+      color: @mainColor;
+      letter-spacing: 5px;
+    }
+    .line {
+      width: 325px;
+      height: 1px;
+      background-color: #d5d5d5;
+      margin: 10px auto;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .desc {
+      color: #a7a7a7;
+      font-size: 12px;
+      letter-spacing: 4px;
+    }
+  }
+}
+.abs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.more-btn {
+  text-align: center;
+  margin-top: 40px;
+  color: #bcbcbc;
+  font-size: 16px;
+  a {
+    color: inherit;
+    &:hover {
+      color: @mainColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .module {
+    padding-bottom: 50px;
+    .title-img {
+      margin-bottom: 30px;
+    }
+    .title-module {
+      margin-bottom: 30px;
+      .title-img {
+        width: 240px;
+      }
+      .title {
+        font-size: 28px;
+      }
+      .line {
+        width: 280px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .max-center {
+    width: calc(100% - 10px);
+  }
+  .module {
+    padding-bottom: 30px;
+    .bg-logo {
+      position: absolute;
+      z-index: 1;
+      img{
+        max-width: 100px;
+      }
+      &.left {
+        left: 0;
+      }
+      &.right {
+        right: 0;
+      }
+    }
+    .title-img {
+      margin: 0 auto 20px;
+    }
+    .title-module {
+      margin-bottom: 30px;
+      .title-img {
+        width: 140px;
+      }
+      .title {
+        font-size: 20px;
+      }
+      .line {
+        width: 180px;
+      }
+    }
+  }
+  .more-btn {
+    margin-top: 20px;
+    a {
+      font-size: 13px;
+    }
+  }
+}

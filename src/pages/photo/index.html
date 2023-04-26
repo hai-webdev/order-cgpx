@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+  <!-- 引入公共导航 -->
+  <%= require("html-loader!../common/nav/index.html") %>
+  <!-- 引入公共面包屑 -->
+  <%= require("html-loader!../common/crumbs/index.html") %>
+  <!-- 引入公共面banner -->
+  <%= require("html-loader!../common/banner/index.html") %>
+  <main class="main-container">
+    <div class="book-container">
+      <span class="before"></span>
+      <div class="book-swiper swiper-container">
+        <ul class="book-list swiper-wrapper">
+          <li class="book-item swiper-slide">
+            <div class="header-title">
+              <span>国家开放大学出版传媒集团</span>
+            </div>
+            <div class="text">
+              <img src="/public/images/book/1.jpg">
+              <p>80-90年代青年团员参观毛泽东同志故居</p>
+            </div>
+            <img src="/public/images/book/bg-left.jpg" alt="" class="bg">
+          </li>
+          <li class="book-item swiper-slide">
+            <div class="header-title">
+              <span>国家开放大学出版传媒集团</span>
+            </div>
+            <div class="text">
+              <img src="/public/images/book/2.jpg">
+              <p>80-90年代青年团员参观毛泽东同志故居80-90年代青年团员参观毛泽东同志故居80-90年代青年团员参观毛泽东同志故居</p>
+            </div>
+            <img src="/public/images/book/bg-right.jpg" alt="" class="bg">
+          </li>
+  
+  
+        </ul>
+  
+        <div class="swiper-button-prev">上一页</div>
+        <!--左箭头。如果放置在swiper外面，需要自定义样式。-->
+        <div class="swiper-button-next">下一页</div>
+        <!--右箭头。如果放置在swiper外面，需要自定义样式。-->
+      </div>
+      <span class="after"></span>
+    </div>
+    <div class="book-tab-container max-center">
+      <ul class="book-tab-list">
+        <li class="book-tab-item on">
+          <a href="">
+            <img src="/public/images/photo/book1.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+        <li class="book-tab-item">
+          <a href="">
+            <img src="/public/images/photo/book2.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+        <li class="book-tab-item">
+          <a href="">
+            <img src="/public/images/photo/book3.png" class="show">
+            <img src="/public/images/photo/book2.png" class="hover">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <!-- 引入公共页尾 -->
+  <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

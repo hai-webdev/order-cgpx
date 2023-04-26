@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <!-- 引入公共导航 -->
+    <%= require("html-loader!../common/nav/index.html") %>
+      <!-- 引入公共面包屑 -->
+      <%= require("html-loader!../common/crumbs/index.html") %>
+        <section class="news-container max-center">
+          <div class="top">
+            <div class="date">
+              <div class="text">
+                <div class="day">08</div>
+              <div class="year">2022-10</div>
+              </div>
+            </div>
+            <h1 class="title">集团2021年度图书社会效益评价考核再获优秀</h1>
+          </div>
+          <div class="content">
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              日前，教育部社科司下发关于反馈图书出版单位2021年度社会效益评价考核情况的函，国家开放大学出版传媒集团下属出版社2021年度社会效益得分
+              为93.25分，等级为优秀。这是出版社连续2年获得“优秀”评级，考核得分也再创新高。
+            </p>
+            <p style="text-align: center;">
+              <img src="/public/images/delate/new1.png" alt="">
+            </p>
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              图书出版单位社会效益评价考核工作由中宣部于2018年启动，考核指标包括出版质量、文化和社会影响、产品结构、制度建设和队伍建设四个方面，
+              考核结果将运用到出版单位绩效考核、评奖推优、出版资源配置等各个方面，以推动出版单位切实把社会效益放在首位、实现社会效益和经济效益相统一，
+              促进出版业健康繁荣发展。
+            </p>
+            <p style="text-indent: 2em;line-height:1.5;color:#939393;">
+              出版传媒集团始终立足党和国家发展大局，坚持正确出版导向，认真落实立德树人根本任务，聚焦主责主业，图书质量不断提升，精品出版在2021年
+              取得一系列成就和突破：集团出版物首次荣获中国出版政府奖，首次入选中宣部主题出版重点出版物，在首届全国教材建设奖评选中获得了职业教育与继续
+              教育类获奖总数全国出版社第5、大学出版社第2的优异成绩。同时，集团持续开展各类图书捐赠、阅读推广等公益活动，主动承担文化单位社会责任，得到
+              媒体、读者和社会大众广泛认可，社会影响力显著提升。在2021年度图书出版单位社会效益评价考核工作中得到主办单位国家开放大学、主管部门教育部社
+              科司高度肯定，也为集团成立20周年暨出版社成立40周年交出了一张亮眼的成绩单。
+            </p>
+          </div>
+        </section>
+
+        <!-- 引入公共页尾 -->
+        <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

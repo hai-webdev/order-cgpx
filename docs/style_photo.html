@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+<link href="src/css/common.css" rel="stylesheet"><link href="src/css/style_photo.css" rel="stylesheet"></head>
+
+<body>
+  <!-- 引入公共页头 -->
+   <header class="pc-header header-container abs"> <div class="header-box max-center"> <a href="/" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="22" height="22"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header> <header class="m-header header-container"> <div class="header-top"> <a href="" class="logo"> <img src="/public/images/logo.png" alt="国家开放大学出版传媒集团"> </a> <div class="menu"> <span></span> <span></span> <span></span> </div> </div> <div class="menu-container"> <nav class="nav-list"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> <form class="search-box"> <div class="inp"> <svg t="1665544815954" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="18" height="18"> <path d="M953.504 908.256l-152.608-163.296c61.856-74.496 95.872-167.36 95.872-265.12 0-229.344-186.624-415.968-416.032-415.968-229.344 0-415.968 186.592-415.968 415.968s186.624 415.968 416 415.968c60.096-0.032 118.048-12.576 172.224-37.248 16.096-7.328 23.2-26.304 15.872-42.368-7.328-16.128-26.4-23.264-42.368-15.872-45.856 20.864-94.88 31.456-145.76 31.488-194.08 0-351.968-157.888-351.968-351.968 0-194.048 157.888-351.968 351.968-351.968 194.112 0 352.032 157.888 352.032 351.968 0 91.36-34.848 177.92-98.08 243.744-12.256 12.736-11.84 32.992 0.864 45.248 0.96 0.928 2.208 1.28 3.296 2.08 0.864 1.28 1.312 2.752 2.4 3.904l165.504 177.088c6.272 6.752 14.816 10.144 23.36 10.144 7.84 0 15.68-2.848 21.856-8.64C964.864 941.408 965.568 921.152 953.504 908.256z" p-id="2555" fill="#930315"></path> </svg> <input type="text" placeholder="作者、书名、ISBN、关键字"> </div> <button type="submit" class="search-btn">资源搜索</button> </form> </div> </header>
+    <!-- 引入公共导航 -->
+    <section class="nav-container"> <nav class="nav-list max-center"> <a class="nav-item" href="/">首页</a> <a class="nav-item on" href="news_list.html">系列报道</a> <a class="nav-item" href="book.html">成就与展望</a> <a class="nav-item" href="story.html">我们的故事</a> <a class="nav-item" href="/#history">大事记</a> <a class="nav-item" href="photo.html">老照片</a> <a class="nav-item" href="style_photo.html">部门风采</a> </nav> </section>
+      <!-- 引入公共面包屑 -->
+      <section class="crumbs-container"> <div class="crumbs-box max-center"> <svg t="1665621257853" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2554" width="26" height="26"><path d="M947.2 422.4L572.8 115.2c-32-25.6-86.4-25.6-118.4 0L76.8 425.6c-12.8 6.4-16 22.4-9.6 35.2 3.2 12.8 16 19.2 28.8 19.2h32v364.8C128 892.8 163.2 928 211.2 928H416c19.2 0 32-12.8 32-32v-147.2c0-22.4 35.2-44.8 64-44.8 28.8 0 67.2 22.4 67.2 44.8V896c0 19.2 12.8 32 32 32h208c48 0 80-32 80-83.2V480h32c12.8 0 25.6-9.6 28.8-22.4 3.2-12.8 0-25.6-12.8-35.2z" fill="#b8b8b8" p-id="2555"></path></svg> <span>所在位置：</span> <a href="/">首页</a>&nbsp;-&nbsp; <a href="">系列报道</a> </div> </section>
+        <!-- 引入公共面banner -->
+        <section class="banner-container"> <img src="/public/images/banner.jpg" alt="栏目名称" class="pc"> <img src="/public/images/banner.jpg" alt="栏目名称" class="m"> </section>
+          <main class="main-container">
+            <ul class="style-tab-list max-center">
+              <li class="style-tab-item on">
+                <a href="style_photo.html">照片</a>
+              </li>
+              <li class="style-tab-item">
+                <a href="style_video.html">视频</a>
+              </li>
+            </ul>
+            <div class="content max-center">
+              <ul class="style-list">
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+                <li class="style-item" data-big-img="/public/images/style/alert1.jpg">
+                  <div class="img">
+                    <img src="/public/images/style/photo1.jpg" alt="编辑中心/继续教育教材研究中心">
+                  </div>
+                  <div class="text">
+                    <div class="tag">集体照1</div>
+                    <div class="title">编辑中心/继续教育教材研究中心</div>
+                  </div>
+                </li>
+              </ul>
+              <!-- 引入公共页尾 -->
+              <div class="pagelist"> <a href=""> <svg t="1665627438221" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000" width="22" height="22"> <path d="M777.878721 68.3043l-438.050717 438.050717c-2.822492 2.822492-2.822492 7.902977 0 11.289967L779.007718 956.824697c6.77398 6.77398 10.725469 16.370452 10.725469 25.966924L789.733186 987.307607C789.733186 1007.629548 773.362734 1024 753.040794 1024l-4.515987 0c-9.596472 0-19.192944-3.951488-25.966924-10.725469l-478.694598-478.694598c-12.418964-12.418964-12.418964-32.740904 0-45.159868l477.565601-477.565601c7.338479-7.338479 17.499449-11.85446499 28.224917-11.854465l0 0c22.01543601 0 40.079383 18.06394699 40.079383 40.079383l0 0C789.733186 50.240353 785.2172 60.401323 777.878721 68.3043z" p-id="1001"></path> </svg> </a> <a href="" class="page-num-current">1</a> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a href="">5</a> <a href="">...</a> <a href="">54</a> <a href=""> <svg t="1665627336804" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2558" width="22" height="22"> <path d="M246.121279 955.6957l438.050717-438.050717c2.822492-2.822492 2.822492-7.902977 0-11.289967L244.992282 67.175303c-6.77398-6.77398-10.725469-16.370452-10.725469-25.966924L234.266814 36.692393C234.266814 16.370452 250.637266 0 270.959206 0l4.515987 0c9.596472 0 19.192944 3.951488 25.966924 10.725469l478.694598 478.694598c12.418964 12.418964 12.418964 32.740904 0 45.159868l-477.565601 477.565601c-7.338479 7.338479-17.499449 11.854465-28.224917 11.854465l0 0c-22.015436 0-40.079383-18.063947-40.079383-40.079383l0 0C234.266814 973.759647 238.7828 963.598677 246.121279 955.6957z" p-id="2559"></path> </svg> </a> </div>
+            </div>
+          </main>
+          <section class="alert-container">
+            <div class="alert-box">
+              <div class="img">
+                <img class="alert-img" src="/public/images/style/alert1.jpg" alt="">
+              </div>
+              <div class="close">
+                <svg t="1665628198042" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2556">
+                  <path d="M557.312 513.248l265.28-263.904c12.544-12.48 12.608-32.704 0.128-45.248-12.512-12.576-32.704-12.608-45.248-0.128l-265.344 263.936-263.04-263.84C236.64 191.584 216.384 191.52 203.84 204 191.328 216.48 191.296 236.736 203.776 249.28l262.976 263.776L201.6 776.8c-12.544 12.48-12.608 32.704-0.128 45.248 6.24 6.272 14.464 9.44 22.688 9.44 8.16 0 16.32-3.104 22.56-9.312l265.216-263.808 265.44 266.24c6.24 6.272 14.432 9.408 22.656 9.408 8.192 0 16.352-3.136 22.592-9.344 12.512-12.48 12.544-32.704 0.064-45.248L557.312 513.248z" p-id="2557" fill="#6d6d6d"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="mask"></div>
+          </section>
+          <!-- 引入公共页尾 -->
+          <footer class="footer-container"> <div class="footer-box"> <div class="links"> <a href=""> <img src="/public/images/link1.png" alt=""> </a> <a href=""> <img src="/public/images/link2.png" alt=""> </a> <a href=""> <img src="/public/images/link3.png" alt=""> </a> <a href=""> <img src="/public/images/link4.png" alt=""> </a> <a href=""> <img src="/public/images/link5.png" alt=""> </a> </div> <div class="cert"> <p>京ICP备14005380号-1</p> <p>经营许可证编号：京ICP证150324号</p> <p>互联网出版许可证</p> <p>京公网安备11010802029563号</p> <p>国家开放大学出版社有限公司</p> </div> <div class="copyright"> copyright 2022.crtvup.com.cn All Rights Reserved </div> </div> </footer> <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/js/styles~book~index~news_list~news_view~photo~story~style_photo~style_video.js"></script><script src="src/js/style_photo.js"></script></body>
+
+</html>

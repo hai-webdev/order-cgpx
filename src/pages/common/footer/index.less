@@ -1,0 +1,38 @@
+@import "~@/assets/global.less";
+.footer-container{
+    background-color: #616161;
+    .footer-box{
+        padding: 40px 0;
+        max-width: 850px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .links{
+            .flex(space-between);
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            a{
+                display: block;
+                img{
+                    height: 37px;
+                }
+            }
+        }
+        .cert{
+            .flex();
+            flex-wrap: wrap;
+            color:#fff;
+            font-size: 14px;
+            p{
+                margin: 0 15px 10px;
+            }
+        }
+        .copyright{
+            text-align: center;
+            color:#fff;
+            font-size: 14px;
+        }
+    }
+}
+@import "./768.less" screen and (max-width:768px);
